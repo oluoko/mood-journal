@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^5.7.2",
+    "@heroicons/react": "^2.1.5",
     "@neondatabase/serverless": "^0.9.5",
     "@prisma/adapter-neon": "^5.20.0",
     "next": "14.2.13",
