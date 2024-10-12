@@ -1,7 +1,14 @@
 'use client'
 
+import { useState } from 'react'
+
 const Editor = ({ entry }) => {
-  return <div>{entry.content}</div>
+  const [value, setValue] = useState(entry.content)
+  return (
+    <div className="w-full h-full">
+      <textarea value={value} />
+    </div>
+  )
 }
 
 export default Editor
