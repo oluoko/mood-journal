@@ -11,8 +11,11 @@
   "dependencies": {
     "@clerk/nextjs": "^5.7.2",
     "@heroicons/react": "^2.1.5",
+    "@langchain/core": "^0.3.10",
+    "@langchain/openai": "^0.3.7",
     "@neondatabase/serverless": "^0.9.5",
     "@prisma/adapter-neon": "^5.20.0",
+    "dotenv": "^16.4.5",
     "framer-motion": "^11.11.8",
     "langchain": "^0.3.2",
     "next": "14.2.13",
