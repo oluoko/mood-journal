@@ -47,7 +47,7 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
       </aside>
 
       {/* Main content */}
-      <div className="flex-1 flex flex-col">
+      <div className="flex-1 flex flex-col h-full">
         <header className="p-4 h-[60px] border-b border-slate-400/30 flex items-center justify-between">
           <div className="h-full w-auto" onClick={toggleSidebar}>
             <Bars3Icon className="w-8 h-8" />
@@ -57,7 +57,9 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
           </div>
         </header>
 
-        <main className="flex-1 overflow-auto p-4">{children}</main>
+        <div className="flex-1 overflow-auto p-4 h-[calc(100vh-60px)]">
+          {children}
+        </div>
       </div>
     </div>
   )
