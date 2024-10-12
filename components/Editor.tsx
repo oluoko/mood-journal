@@ -24,7 +24,7 @@ const Editor = ({ entry }) => {
         placeholder="Write your entry here..."
         value={value}
         onChange={(e) => setValue(e.target.value)}
-        className="bg-slate-700/40 w-full h-[calc(100vh-100px)] p-3 md:p-7 text-sm md:text-xl rounded-lg outline-none"
+        className="bg-slate-700/40 w-full h-[calc(100vh-100px)] p-3 md:p-7 rounded-lg outline-none"
       />
     </div>
   )
