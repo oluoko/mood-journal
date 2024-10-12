@@ -9,26 +9,15 @@ interface DashboardLayoutProps {
 }
 
 const DashboardLayout = ({ children }: DashboardLayoutProps) => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false) // Initially closed
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
-  // Set sidebar open on larger screens and closed on smaller screens
+  // always close sidebar on load
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 768) {
-        setIsSidebarOpen(true) // Open sidebar on larger screens (md and above)
-      } else {
-        setIsSidebarOpen(false) // Closed on smaller screens (below md)
-      }
+      setIsSidebarOpen(false)
     }
 
-    // Initialize on mount
     handleResize()
-
-    // Add resize event listener
-    window.addEventListener('resize', handleResize)
-
-    // Clean up the event listener on unmount
-    return () => window.removeEventListener('resize', handleResize)
   }, [])
 
   const toggleSidebar = () => {
