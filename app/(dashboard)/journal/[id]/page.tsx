@@ -34,12 +34,12 @@ const EntryPage = async ({ params }) => {
         <div className="bg-slate-700/40 m-1 md:m-2 px-1 md:px-2 py-2 md:py-4 rounded-lg">
           <h2 className="text-[15px] md:text-xl">Analysis</h2>
         </div>
-        <div className="bg-slate-700/40 m-1 md:m-2 px-1 md:px-2 py-2 md:py-4 rounded-lg">
+        <div className="m-1 md:m-2 px-1 md:px-2 py-2 md:py-4 rounded-lg">
           <ul>
             {analysisData.map((item) => (
               <li
                 key={item.name}
-                className="flex items-center  justify-between"
+                className="flex items-center  justify-between py-2 border-t border-slate-400/30"
               >
                 <span className="font-extrabold text-lg md:text-xl">
                   {item.name}
