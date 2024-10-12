@@ -1,7 +1,7 @@
 'use client'
 
 import { updateEntry } from '@/utils/api'
-import { use, useState } from 'react'
+import { useState } from 'react'
 import { useAutosave } from 'react-autosave'
 
 const Editor = ({ entry }) => {
