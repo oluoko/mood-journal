@@ -17,6 +17,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: 'Reflectify!',
   description: 'The best journal app out there',
+  icons: { icon: '/Rlogo w.svg' },
 }
 
 export default function RootLayout({
