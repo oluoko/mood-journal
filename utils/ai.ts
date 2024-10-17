@@ -9,6 +9,7 @@ const parser = StructuredOutputParser.fromZodSchema(
       .string()
       .describe('the mood of the perseon who wrote the journal entry.'),
     summary: z.string().describe('quick summary of the entire entry.'),
+    subject: z.string().describe('the subject of the journal entry.'),
     negative: z
       .boolean()
       .describe(
