@@ -18,7 +18,7 @@ const getEntries = async () => {
   })
 
   const firstentry =
-    " I was finally able to resolve the withdrawal issue with my bank. I'm so relieved. I was able to get my money back. I'm so happy. "
+    " I was finally able to resolve the withdrawal issue with my bank. I'm so relieved. I was able to get my money back. I'm so happy."
 
   await analyze(`${firstentry} `)
 
