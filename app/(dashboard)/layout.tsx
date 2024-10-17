@@ -3,6 +3,9 @@ import { useState, useEffect } from 'react'
 import { UserButton } from '@clerk/nextjs'
 import { Bars3Icon } from '@heroicons/react/24/outline'
 import { ReactNode } from 'react'
+import smallLogo from '/public/Rlogo w.svg'
+import largeLogo from '/public/Reflectify W Animinate Logo.svg'
+import Image from 'next/image'
 
 interface DashboardLayoutProps {
   children: ReactNode
@@ -32,7 +35,9 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
           isSidebarOpen ? 'w-[200px]' : 'w-[30px] md:w-[60px]'
         } transition-all duration-300 h-full border-r border-slate-400/30 overflow-hidden`}
       >
-        <div className="p-4 text-center">{isSidebarOpen ? 'Mood' : 'M'}</div>
+        <div className="p-4 text-center">
+          <Image src={isSidebarOpen ? largeLogo : smallLogo} alt="logo" />
+        </div>
       </aside>
 
       {/* Main content */}
