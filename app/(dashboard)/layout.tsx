@@ -42,7 +42,9 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
         } transition-all duration-300 h-full border-r border-slate-400/30 overflow-hidden`}
       >
         <div className="p-4 text-center">
-          <Image src={isSidebarOpen ? largeLogo : smallLogo} alt="logo" />
+          <Link href="/">
+            <Image src={isSidebarOpen ? largeLogo : smallLogo} alt="logo" />
+          </Link>
         </div>
         <ul>
           {links.map((link) => (
