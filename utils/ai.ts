@@ -1,6 +1,7 @@
 import { OpenAI } from '@langchain/openai'
 import { StructuredOutputParser } from '@langchain/core/output_parsers'
 import z from 'zod'
+import { PromptTemplate } from '@langchain/core/prompts'
 
 const parser = StructuredOutputParser.fromZodSchema(
   z.object({
@@ -20,6 +21,10 @@ const parser = StructuredOutputParser.fromZodSchema(
       ),
   })
 )
+
+const getPrompt = (content) => {
+  const formatted_instructions = parser.getFormatInstructions()
+}
 
 export const analyze = async (prompt) => {
   const model = new OpenAI({ temperature: 0, modelName: 'gpt-3.5-turbo' })
