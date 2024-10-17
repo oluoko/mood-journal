@@ -6,10 +6,16 @@ import { ReactNode } from 'react'
 import smallLogo from '/public/Rlogo w.svg'
 import largeLogo from '/public/Reflectify W Animinate Logo.svg'
 import Image from 'next/image'
+import Link from 'next/link'
 
 interface DashboardLayoutProps {
   children: ReactNode
 }
+
+const links = [
+  { href: '/', label: 'Home' },
+  { href: '/journal', label: 'Journal' },
+]
 
 const DashboardLayout = ({ children }: DashboardLayoutProps) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
@@ -38,6 +44,16 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
         <div className="p-4 text-center">
           <Image src={isSidebarOpen ? largeLogo : smallLogo} alt="logo" />
         </div>
+        <ul>
+          {links.map((link) => (
+            <li
+              key={link.href}
+              className="px-2 md:px-4 py-3 md:py-6 text-sm md:text-xl"
+            >
+              <Link href={link.href}>{link.label}</Link>
+            </li>
+          ))}
+        </ul>
       </aside>
 
       {/* Main content */}
