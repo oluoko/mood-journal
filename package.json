@@ -15,6 +15,7 @@
     "@langchain/openai": "^0.3.10",
     "@neondatabase/serverless": "^0.9.5",
     "@prisma/adapter-neon": "^5.20.0",
+    "cohere-ai": "^7.14.0",
     "dotenv": "^16.4.5",
     "framer-motion": "^11.11.8",
     "langchain": "^0.3.2",
