@@ -27,7 +27,7 @@ const Question = () => {
     <div className="w-full mb-4">
       <form
         action=""
-        className="w-full flex items-center gap-2 md:gap-4"
+        className="w-5/6 md:w-2/3 flex items-center gap-2 md:gap-4"
         onSubmit={handleSubmit}
       >
         <input
@@ -47,7 +47,11 @@ const Question = () => {
         </button>
       </form>
       {loading && <div>Loading...</div>}
-      {response && <div>{response}</div>}
+      {response && (
+        <div className="w-11/12 md:w-full my-3 pb-2 md:pb-4 border-b border-slate-400/35">
+          {response}
+        </div>
+      )}
     </div>
   )
 }
