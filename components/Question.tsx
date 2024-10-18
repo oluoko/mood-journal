@@ -10,19 +10,29 @@ const Question = () => {
     // do the thing
   }
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+
+    // do the thing
+  }
+
   return (
-    <div className="">
-      <form action="">
+    <div className="w-full mb-4">
+      <form
+        action=""
+        className="w-full flex items-center gap-2 md:gap-4"
+        onSubmit={handleSubmit}
+      >
         <input
           onChange={onChange}
           value={value}
           type="text"
           placeholder="Ask a question..."
-          className="border border-black/20 px-4 py-6 rounded-lg text-sm md:text-xl"
+          className="border border-black/20 px-4 py-3 rounded-lg text-sm md:text-xl w-3/4"
         />
         <button
           type="submit"
-          className="bg-blue-400 px-2 py-2 rounded-lg text-sm md:text:xl"
+          className="bg-blue-400 px-4 py-3 rounded-lg text-sm md:text-xl w-1/4 h-full"
         >
           Ask
         </button>

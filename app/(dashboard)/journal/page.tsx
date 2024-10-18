@@ -32,7 +32,7 @@ const JournalPage = async () => {
   return (
     <div className=" md:p-8">
       <h2 className="text-2xl md:text-3xl mb-4 md:mb-6">Journal</h2>
-      <div className="">
+      <div className=" w-5/6 md:w-1/2">
         <Question />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-4">
