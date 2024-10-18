@@ -5,9 +5,7 @@ import { useState } from 'react'
 const Question = () => {
   const [value, setValue] = useState('')
   const onChange = (e) => {
-    e.preventDefault()
-
-    // do the thing
+    setValue(e.target.value)
   }
 
   const handleSubmit = (e) => {
