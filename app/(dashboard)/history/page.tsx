@@ -23,7 +23,12 @@ const History = async () => {
   console.log('Analyses', analyses)
   return (
     <div className="w-full h-full">
-      <div>Average Sentiment: {avg ? avg : 'Nothing to Display'}</div>
+      <div>
+        Average Sentiment:{' '}
+        {avg
+          ? avg
+          : 'Nothing to Display. Go to Journal to input your first entry.'}
+      </div>
       <div className="w-full h-full">
         <HistoryChart data={analyses} />
       </div>
