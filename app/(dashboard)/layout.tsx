@@ -12,6 +12,7 @@ import smallLogo from '/public/Rlogo w.svg'
 import largeLogo from '/public/Reflectify W Animinate Logo.svg'
 import Image from 'next/image'
 import Link from 'next/link'
+import CreatorImage from '@/components/CreatorImage'
 
 interface DashboardLayoutProps {
   children: ReactNode
@@ -21,6 +22,7 @@ const links = [
   { href: '/', label: 'Home', icon: HomeIcon },
   { href: '/journal', label: 'Journal', icon: BookOpenIcon },
   { href: '/history', label: 'History', icon: ClockIcon },
+  { href: '/creator', label: 'Creator', icon: CreatorImage },
 ]
 
 const DashboardLayout = ({ children }: DashboardLayoutProps) => {
