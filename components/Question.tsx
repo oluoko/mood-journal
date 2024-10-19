@@ -35,7 +35,7 @@ const Question = () => {
           onChange={onChange}
           value={value}
           type="text"
-          placeholder="Ask a question..."
+          placeholder="Ask the AI a question about your entries..."
           className="border border-black/20 px-4 py-3 rounded-lg text-sm md:text-xl w-3/4"
         />
         <button
