@@ -51,7 +51,7 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
       >
         <Link href="/" className="w-11/12 p-4 text-center">
           <Image
-            className="w-full h-auto"
+            className="w-full h-auto p-2 md:p-4"
             src={isSidebarOpen ? largeLogo : smallLogo}
             alt="logo"
           />
