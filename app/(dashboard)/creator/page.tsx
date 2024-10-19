@@ -3,10 +3,10 @@ import Link from 'next/link'
 
 const Creator = () => {
   return (
-    <div className="text-center p-8 h-[86vh] flex flex-col justify-center bg-gray-900 rounded-lg text-white">
+    <div className="text-center p-8 w-auto h-[86vh] flex flex-col justify-center bg-gray-900 rounded-lg text-white">
       {/* Title */}
       <h1 className="text-4xl font-bold mb-2">Hi there, I'm Brian Otieno</h1>
-      <div className="text-left max-w-2xl mx-auto mb-8">
+      <div className="text-left  mx-auto mb-8">
         <ul className="list-none space-y-2 text-lg">
           <li>
             📫 How to reach me:{' '}
