@@ -1,7 +1,12 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { UserButton } from '@clerk/nextjs'
-import { Bars3Icon } from '@heroicons/react/24/outline'
+import {
+  Bars3Icon,
+  HomeIcon,
+  BookOpenIcon,
+  ClockIcon,
+} from '@heroicons/react/24/outline'
 import { ReactNode } from 'react'
 import smallLogo from '/public/Rlogo w.svg'
 import largeLogo from '/public/Reflectify W Animinate Logo.svg'
@@ -13,9 +18,9 @@ interface DashboardLayoutProps {
 }
 
 const links = [
-  { href: '/', label: 'Home' },
-  { href: '/journal', label: 'Journal' },
-  { href: '/history', label: 'History' },
+  { href: '/', label: 'Home', icon: HomeIcon },
+  { href: '/journal', label: 'Journal', icon: BookOpenIcon },
+  { href: '/history', label: 'History', icon: ClockIcon },
 ]
 
 const DashboardLayout = ({ children }: DashboardLayoutProps) => {
@@ -51,9 +56,10 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
           {links.map((link) => (
             <li
               key={link.href}
-              className="px-2 md:px-4 py-3 md:py-6 text-sm md:text-xl"
+              className="px-2 md:px-4 py-3 md:py-6 flex items-center space-x-2 text-sm md:text-xl"
             >
-              <Link href={link.href}>{link.label}</Link>
+              <link.icon className="w-8 h-8" />
+              <Link href={link.href}>{isSidebarOpen && link.label}</Link>
             </li>
           ))}
         </ul>
