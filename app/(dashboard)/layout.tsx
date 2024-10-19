@@ -56,10 +56,12 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
           {links.map((link) => (
             <li
               key={link.href}
-              className="px-2 md:px-4 py-3 md:py-6 flex items-center space-x-2 text-sm md:text-xl"
+              className="px-2 md:px-4 py-3 md:py-6 text-sm md:text-xl"
             >
-              <link.icon className="w-8 h-8" />
-              <Link href={link.href}>{isSidebarOpen && link.label}</Link>
+              <Link href={link.href} className="flex items-center space-x-2 ">
+                <link.icon className="w-8 h-8" />
+                {isSidebarOpen && link.label}
+              </Link>
             </li>
           ))}
         </ul>
@@ -69,7 +71,7 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
       <div className="flex-1 flex flex-col h-full">
         <header className="p-4 h-[60px] border-b border-slate-400/30 flex items-center justify-between">
           <div className="h-full w-auto" onClick={toggleSidebar}>
-            <Bars3Icon className="w-8 h-8" />
+            <Bars3Icon className="w-8 h-8 cursor-pointer" />
           </div>
           <div className="px-6 flex items-center justify-end w-full">
             <UserButton />

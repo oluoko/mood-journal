@@ -2,6 +2,7 @@
 import { useAuth } from '@clerk/nextjs'
 import Link from 'next/link'
 import Image from 'next/image'
+import ShinyButton from '@/components/ShinyButton'
 
 export default function Home() {
   const { userId } = useAuth()
@@ -28,9 +29,7 @@ export default function Home() {
         </p>
         <div>
           <Link href={href}>
-            <button className="bg-blue-600 px-4 py-2 rounded-lg text-lg md:text-xl">
-              get started
-            </button>
+            <ShinyButton text={'get started'} />
           </Link>
         </div>
       </div>

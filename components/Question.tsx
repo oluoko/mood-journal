@@ -41,7 +41,7 @@ const Question = () => {
         <button
           disabled={loading}
           type="submit"
-          className="bg-blue-400 px-4 py-3 rounded-lg text-sm md:text-xl w-1/4 h-full"
+          className="bg-slate-700/40 border border-slate-400/30 px-4 py-3 rounded-lg text-sm md:text-xl w-1/4 h-full"
         >
           Ask
         </button>
