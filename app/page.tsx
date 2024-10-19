@@ -29,7 +29,7 @@ export default function Home() {
         </p>
         <div>
           <Link href={href}>
-            <div className="w-[150px] md:w-[250px] h-[70px] md:h-auto rounded-lg bg-slate-700/40">
+            <div className="w-[150px] md:w-[250px] h-[50px] md:h-auto rounded-lg bg-slate-700/40">
               <ShinyButton text={'get started'} />
             </div>
           </Link>
