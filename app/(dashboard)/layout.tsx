@@ -78,10 +78,13 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
       {/* Main content */}
       <div className="flex-1 flex flex-col h-full">
         <header className="p-2 md:p-4 h-[60px] border-b border-slate-400/30 flex items-center justify-between">
-          <div className="h-full w-auto" onClick={toggleSidebar}>
+          <div
+            className="h-full flex items-center justify-end"
+            onClick={toggleSidebar}
+          >
             <Bars3Icon className="w-6 md:w-8 h-6 md:h-8 cursor-pointer" />
           </div>
-          <div className="px-6 flex items-center justify-end w-full">
+          <div className="px-0 md:px-6 h-full flex items-center justify-end">
             <UserButton />
           </div>
         </header>
