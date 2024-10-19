@@ -8,7 +8,7 @@ const CreatorImage = () => {
       alt="creator"
       width={50}
       height={50}
-      className="rounded-1/2"
+      className="rounded-full"
     />
   )
 }

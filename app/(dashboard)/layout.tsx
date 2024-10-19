@@ -60,9 +60,15 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
               key={link.href}
               className="px-2 md:px-4 py-3 md:py-6 text-sm md:text-xl"
             >
-              <Link href={link.href} className="flex items-center space-x-2 ">
+              <Link
+                href={link.href}
+                className="flex justify-between items-center "
+              >
                 <link.icon className="w-8 h-8" />
-                {isSidebarOpen && link.label}
+
+                {isSidebarOpen && (
+                  <span className="pr-3 md:pr-6"> {link.label} </span>
+                )}
               </Link>
             </li>
           ))}
