@@ -18,7 +18,7 @@ const getEntries = async () => {
     },
   })
 
-  const firstentry = `Welcome back! Take a moment to reflect on your day. The more honest and detailed you are, the better insight you'll gain into how you're feeling. Write about anything on your mind—what made you smile, what frustrated you, or anything in between.`
+  const firstentry = `Welcome! Take a moment to reflect on your day. The more honest and detailed you are, the better insight you'll gain into how you're feeling. Write about anything on your mind—what made you smile, what frustrated you, or anything in between.`
 
   await analyze(`${firstentry} `)
 
