@@ -49,11 +49,14 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
           isSidebarOpen ? 'w-[200px]' : 'w-[30px] md:w-[60px]'
         } transition-all duration-300 h-full border-r border-slate-400/30 overflow-hidden`}
       >
-        <div className="p-4 text-center">
-          <Link href="/">
-            <Image src={isSidebarOpen ? largeLogo : smallLogo} alt="logo" />
-          </Link>
-        </div>
+        <Link href="/" className="w-11/12 p-4 text-center">
+          <Image
+            className="w-full h-auto"
+            src={isSidebarOpen ? largeLogo : smallLogo}
+            alt="logo"
+          />
+        </Link>
+
         <ul>
           {links.map((link) => (
             <li
