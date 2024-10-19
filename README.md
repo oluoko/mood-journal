@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). It is a full-stack AI-powered Journal app in Next.js. See how all the pieces of Next.js/React fit together: client components, server components, static and dynamic routing, server actions, middleware, and layouts. Store data in a serverless Prisma DB on PlanetScale and integrate the OpenAI API and Langchain before deploying your app to the world!
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). It is a full-stack AI-powered Journal app in Next.js. See how all the pieces of Next.js/React fit together: client components, server components, static and dynamic routing, server actions, middleware, and layouts. Store data in a serverless Prisma DB on Neon and integrate the OpenAI API and Langchain before deploying your app to the world!
 
 ## Getting Started
 
