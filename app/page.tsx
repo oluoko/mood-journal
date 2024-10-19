@@ -29,7 +29,9 @@ export default function Home() {
         </p>
         <div>
           <Link href={href}>
-            <ShinyButton text={'get started'} />
+            <div className="w-[120px] md:w-[250px] rounded-lg bg-slate-700/40">
+              <ShinyButton text={'get started'} />
+            </div>
           </Link>
         </div>
       </div>
