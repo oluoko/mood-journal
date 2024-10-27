@@ -15,6 +15,11 @@ const NewEntryCard = () => {
       setLoading(true) // Start loading
 
       const data = await createNewEntry()
+
+      if (!data?.id) {
+        throw new Error('Entry creation failed: Invalid response from server.')
+      }
+
       router.push(`/journal/${data.id}`) // Redirect after success
     } catch (error) {
       console.error('Error creating entry:', error)

@@ -15,8 +15,8 @@ const geistMono = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'Reflectify!',
-  description: 'The best journal app out there',
+  title: 'Reflectify: Mood Journal',
+  description: 'Your personal journal',
   icons: { icon: '/Rlogo w.svg' },
 }
 

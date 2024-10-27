@@ -20,16 +20,16 @@ const getData = async () => {
 
 const History = async () => {
   const { avg, analyses } = await getData()
-  console.log('Analyses', analyses)
+
   return (
-    <div className="w-full h-full">
+    <div className="md:p-2 h-full">
       <div>
         Average Sentiment:{' '}
         {avg
           ? avg
           : 'Nothing to Display. Go to Journal to input your first entry.'}
       </div>
-      <div className="w-full h-full">
+      <div className="w-auto h-full">
         <HistoryChart data={analyses} />
       </div>
     </div>

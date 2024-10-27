@@ -35,8 +35,8 @@ const Question = () => {
           onChange={onChange}
           value={value}
           type="text"
-          placeholder="Ask the AI(gpt-3.5-turbo) a question about your entries..."
-          className="border border-black/20 px-4 py-3 rounded-lg text-sm md:text-xl w-3/4"
+          placeholder="Ask the AI(gpt-4o-mini) a question about your entries..."
+          className="border border-black/20 px-4 py-3 rounded-lg text-sm md:text-xl w-3/4 text-black"
         />
         <button
           disabled={loading}

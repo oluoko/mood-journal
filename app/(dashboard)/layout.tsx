@@ -46,7 +46,7 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
       {/* Sidebar */}
       <aside
         className={`${
-          isSidebarOpen ? 'w-[200px]' : 'w-[30px] md:w-[60px]'
+          isSidebarOpen ? 'w-[27%] md:w-[170px]' : 'w-[10%] md:w-[5%]'
         } transition-all duration-300 h-full border-r border-slate-400/30 overflow-hidden`}
       >
         <Link href="/" className="w-11/12 p-4 text-center">
@@ -67,7 +67,7 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
                 href={link.href}
                 className="flex justify-between items-center "
               >
-                <link.icon className="w-8 h-8" />
+                <link.icon className="w-4 md:w-8 h-4 md:h-8" />
 
                 {isSidebarOpen && (
                   <span className="pr-3 md:pr-6"> {link.label} </span>

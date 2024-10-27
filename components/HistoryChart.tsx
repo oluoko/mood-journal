@@ -2,7 +2,15 @@
 
 import { ResponsiveContainer, Line, XAxis, Tooltip, LineChart } from 'recharts'
 
-const CustomTooltip = ({ active, payload, label }) => {
+import { TooltipProps } from 'recharts'
+
+interface CustomTooltipProps extends TooltipProps<number, string> {
+  active?: boolean
+  payload?: any
+  label?: string
+}
+
+const CustomTooltip = ({ active, payload, label }: CustomTooltipProps) => {
   const dateLabel = new Date(label).toLocaleDateString('en-US', {
     weekday: 'long',
     year: 'numeric',
@@ -15,13 +23,18 @@ const CustomTooltip = ({ active, payload, label }) => {
   if (active) {
     const analysis = payload[0].payload
     return (
-      <div className="p-8 custom-tooltip bg-white/5 shadow-md  border border-black/10 rounded-lg">
+      <div className="p-8 custom-tooltip bg-white/10 shadow-md  border border-black/10 rounded-lg">
         <div
-          className="absolute left-2 top-2 w-2/3 h-2 rounded-full"
+          className="absolute left-2 top-2 w-11/12 h-2 rounded-full my-2 mx-2"
           style={{ background: analysis.color }}
         ></div>
-        <p className="label text-sm">{dateLabel}</p>
-        <div className="intro text-xl uppercase">{analysis.mood}</div>
+        <p className="label text-sm my-2">{dateLabel}</p>
+        <div className="flex justify-between my-3">
+          <div className="intro text-xl uppercase">{analysis.mood}</div>
+          <div className="text-lg">
+            Score: <span className="font-bold">{analysis.sentimentScore}</span>
+          </div>
+        </div>
       </div>
     )
   }

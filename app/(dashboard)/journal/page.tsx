@@ -1,10 +1,8 @@
-import EntryCard from '@/components/EntryCard'
+import JournalFilter from '@/components/JournalFilter'
 import NewEntryCard from '@/components/NewEntryCard'
 import Question from '@/components/Question'
-import { analyze } from '@/utils/ai'
 import { getUserByClerkId } from '@/utils/auth'
 import { prisma } from '@/utils/db'
-import Link from 'next/link'
 
 const getEntries = async () => {
   const user = await getUserByClerkId()
@@ -18,11 +16,19 @@ const getEntries = async () => {
     },
   })
 
-  const firstentry = `Welcome! Take a moment to reflect on your day. The more honest and detailed you are, the better insight you'll gain into how you're feeling. Write about anything on your mind—what made you smile, what frustrated you, or anything in between.`
+  // also get the analysis for each entry
+  const entriesWithAnalysis = await Promise.all(
+    entries.map(async (entry) => {
+      const analysis = await prisma.analysis.findUnique({
+        where: {
+          entryId: entry.id,
+        },
+      })
+      return { ...entry, analysis }
+    })
+  )
 
-  await analyze(`${firstentry} `)
-
-  return entries
+  return entriesWithAnalysis
 }
 
 const JournalPage = async () => {
@@ -30,18 +36,12 @@ const JournalPage = async () => {
 
   return (
     <div className=" md:p-2">
-      <h2 className="text-2xl md:text-3xl mb-4">Journal Entries</h2>
+      <h2 className="text-2xl md:text-3xl mb-1 md:mb-2">Your Entries</h2>
       <div className=" w-full">
         <Question />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-4">
-        <NewEntryCard />
-        {entries.map((entry) => (
-          <Link href={`/journal/${entry.id}`} key={entry.id}>
-            <EntryCard key={entry.id} entry={entry} />
-          </Link>
-        ))}
-      </div>
+
+      <JournalFilter entries={entries} />
     </div>
   )
 }
