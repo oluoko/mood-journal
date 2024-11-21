@@ -3,6 +3,7 @@ import NewEntryCard from '@/components/NewEntryCard'
 import Question from '@/components/Question'
 import { getUserByClerkId } from '@/utils/auth'
 import { prisma } from '@/utils/db'
+import { useRouter } from 'next/navigation'
 
 const getEntries = async () => {
   const user = await getUserByClerkId()

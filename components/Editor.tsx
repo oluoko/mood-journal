@@ -9,6 +9,21 @@ const Editor = ({ entry }) => {
   const [isLoading, setIsLoading] = useState(false)
   const [analysis, setAnalysis] = useState(entry.analysis)
   const [entryDate, setEntryDate] = useState(entry.createdAt)
+  const [usePrompts, setUsePrompts] = useState(false)
+  const [startedTyping, setStartedTyping] = useState(false)
+
+  const prompts = [
+    `What would I do if money  were no object?`,
+    `What activities have recently energized or drained me?`,
+    `If I knew I'd die in 2  years, how would I  spend my time?`,
+    `Rating myself out  of  10 in work, health and relationships. What's one step to improve each?`,
+    `What am I grateful for today?`,
+    `What is a boundary I need to  set in my life?`,
+    `What did I  learn from my last relationship or  an observed one?`,
+    `What's a small frustration I can  improve or let go of?`,
+    `A letter to someone I miss or thanking someone who impacted my life.`,
+    `What excites me? What drains me? What did  I learn this week?`,
+  ]
 
   const { mood, summary, subject, negative, color } = analysis
   const analysisData = [
@@ -55,6 +70,13 @@ const Editor = ({ entry }) => {
 
     setEntryDate(updatedEntry.createdAt)
     setIsLoading(false)
+  }
+
+  const handleTyping = (e) => {
+    if (!startedTyping) {
+      setStartedTyping(true)
+    }
+    setValue(e.target.value)
   }
 
   useAutosave({
