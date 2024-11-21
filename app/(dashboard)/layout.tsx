@@ -2,11 +2,14 @@
 import { useState, useEffect } from 'react'
 import { UserButton } from '@clerk/nextjs'
 import {
-  Bars3Icon,
   HomeIcon,
   BookOpenIcon,
   ClockIcon,
 } from '@heroicons/react/24/outline'
+import {
+  EllipsisVertical,
+  List,
+} from "lucide-react";
 import { ReactNode } from 'react'
 import smallLogo from '/public/Rlogo w.svg'
 import largeLogo from '/public/Reflectify W Animinate Logo.svg'
@@ -82,10 +85,10 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
       <div className="flex-1 flex flex-col h-full">
         <header className="p-2 md:p-4 h-[60px] border-b border-slate-400/30 flex items-center justify-between">
           <div
-            className="h-full flex items-center justify-end"
+            className="h-full flex items-center justify-end cursor-pointer"
             onClick={toggleSidebar}
           >
-            <Bars3Icon className="w-6 md:w-8 h-6 md:h-8 cursor-pointer" />
+ {isSidebarOpen ? <List className="size-6 md:size-8" /> : <EllipsisVertical className="size-6 md:size-8" />}
           </div>
           <div className="px-0 md:px-6 h-full flex items-center justify-end">
             <UserButton />
