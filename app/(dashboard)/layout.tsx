@@ -88,7 +88,7 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
             className="h-full flex items-center justify-end cursor-pointer"
             onClick={toggleSidebar}
           >
- {isSidebarOpen ? <List className="size-6 md:size-8" /> : <EllipsisVertical className="size-6 md:size-8" />}
+ {isSidebarOpen ? <EllipsisVertical className="size-6 md:size-8" /> : <List className="size-6 md:size-8" />}
           </div>
           <div className="px-0 md:px-6 h-full flex items-center justify-end">
             <UserButton />
