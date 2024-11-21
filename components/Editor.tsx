@@ -101,19 +101,21 @@ const Editor = ({ entry }) => {
             type="date"
             value={formatDate(entryDate)}
             onChange={handleDateChange}
-            className="bg-slate-700/40 rounded-lg py-2 px-3"
+            className="bg-slate-700/40 rounded-lg p-1 text-sm"
           />
-          <div className="bg-green-400/50 rounded-lg py-2 px-3">
+          <div className="bg-green-400/50 rounded-lg p-1 text-sm">
             {isLoading ? <div>Saving...</div> : <div>Saved</div>}
           </div>
         </div>
 
         <textarea
           title="Entry Content"
-          placeholder={`Welcome! Take a moment to reflect on your day. The more honest and detailed you are, the better insight you'll gain into how you're feeling. Write about anything on your mind—what made you smile today, what frustrated you, or anything in between. Write your entry here...`}
+          placeholder={`Welcome! Take a moment to reflect on your day. The more honest and detailed you are, the better insight you'll gain into how you're feeling. Write about anything on your mind
+            ${prompts.map((prompt) => `\n    - ${prompt}`).join('')}
+            \nWrite your entry here...`}
           value={value}
           onChange={(e) => setValue(e.target.value)}
-          className="bg-slate-700/40 w-full h-[calc(60vh-70px)] md:h-[calc(100vh-100px)] px-2 py-3 md:px-4 md:py-6 rounded-lg outline-none"
+          className="bg-slate-700/40 w-full h-[calc(60vh-70px)] md:h-[calc(100vh-100px)] p-2 rounded-lg outline-none text-lg"
         />
       </div>
 
