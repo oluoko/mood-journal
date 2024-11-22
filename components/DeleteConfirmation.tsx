@@ -16,13 +16,14 @@ const DeleteConfirmation = ({ subject, onConfirm, onCancel }) => {
 
   return (
     <div className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center">
-      <div className="'border-slate-400/30 bg-slate-950 p-6 rounded-lg shadow-md w-[90%] md:w-[400px]">
-        <h2 className="text-xl font-semibold mb-4">
+      <div className="border 'border-slate-700/60 bg-slate-950 p-6 rounded-lg shadow-xl shadow-slate-300/10 w-[90%] md:w-[50%]">
+        <h2 className="text-xl font-semibold mb-4 text-slate-400/60">
           Are you sure you want to delete this entry?
         </h2>
-        <p className="mb-2">
-          Please type <strong>&rdquo;{subject}&ldquo;</strong> to confirm
-          deletion.
+        <p className="mb-2 text-slate-400/60">
+          Type{' '}
+          <strong className="font-bold text-xl text-white">{subject}</strong> to
+          confirm deletion.
         </p>
 
         {!dontMatch && (
@@ -34,8 +35,8 @@ const DeleteConfirmation = ({ subject, onConfirm, onCancel }) => {
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          className="w-full p-2 border rounded-lg mb-4 bg-transparent"
-          placeholder={`Type "${subject}" to confirm`}
+          className="w-full p-2 my-3 border rounded-lg mb-4 bg-transparent"
+          placeholder={`Type "${subject}" here...`}
         />
         <div className="flex justify-between">
           <button
