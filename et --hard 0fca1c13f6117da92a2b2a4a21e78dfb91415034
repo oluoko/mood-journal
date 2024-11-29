@@ -1,0 +1,735 @@
+[33mcommit 880751e3d8c748f817187f193b5733b1f14f1faf[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Nov 29 16:21:16 2024 +0300
+
+    Geno Safaris: First Commit
+
+[33mcommit 818bf123c06cd3a9bcad23c74211326db1238603[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Nov 29 16:20:31 2024 +0300
+
+    First Commit
+
+[33mcommit 0fca1c13f6117da92a2b2a4a21e78dfb91415034[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Tue Nov 26 21:06:10 2024 +0300
+
+    Mood Journal: Added and styled AuthImage.tsx component
+
+[33mcommit 550577f0c0a1393bb51d3978cb84cae0b56be9b4[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Nov 22 03:50:05 2024 +0300
+
+    Mood Journal: Deleting an entry inside the  editor
+
+[33mcommit f96ae2b08c405be577b803808ddc812183f4405e[m
+Author: Brian Otieno <101041804+oluoko@users.noreply.github.com>
+Date:   Thu Nov 21 17:31:17 2024 +0300
+
+    Update layout.tsx
+
+[33mcommit 5581429e2fe04e2831977faaf7ad1e502074a753[m
+Author: Brian Otieno <101041804+oluoko@users.noreply.github.com>
+Date:   Thu Nov 21 17:24:54 2024 +0300
+
+    Update layout.tsx
+
+[33mcommit 97fa0a69f032a56c0d7ff901f24631293e5e3d77[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Thu Nov 21 17:14:21 2024 +0300
+
+    Mood Journal: Added Lucide React
+
+[33mcommit cd5c4a09c7b789b180e7ac5cb827723762e8b075[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Thu Nov 21 16:45:39 2024 +0300
+
+    Mood Journal: Styling  the placeholder  text
+
+[33mcommit d68721089c2ca583985a758e8ade296f8629cce5[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Thu Nov 21 11:17:33 2024 +0300
+
+    Mood Journal
+
+[33mcommit 54a91f82c7de8586b9454582cbd37c14b428ebc0[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sun Oct 27 13:40:08 2024 +0300
+
+    Mood Journal: Updated Question.tsx
+
+[33mcommit 3652a042a99223e9784980d82495a89568a2ce29[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sun Oct 27 13:10:29 2024 +0300
+
+    Mood Journal: Properly renamed DeleteConfirmation.tsx
+
+[33mcommit 73bca7907e11c6d4b6edbeeadc6f411ee1e9d1c1[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sun Oct 27 13:02:09 2024 +0300
+
+    Mood Journal: migrations
+
+[33mcommit 600edb9c87a2cb36a1d493f61a6057e4b9442a6f[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sun Oct 27 12:49:22 2024 +0300
+
+    Mood Journal: Major Update
+    Styling compenents to look better
+    Adding delete entry functionality
+    Adding updated date on entry functionality which also update the createdAt of its analysis so that they match
+
+[33mcommit ce86fc991ef41bbe31cab37cbe12d7f3af8b040a[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Wed Oct 23 17:16:30 2024 +0300
+
+    Mood Journal: Updated Question.tsx
+
+[33mcommit ef0212310c344006541a958347bae2f72f941626[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 19 23:31:06 2024 +0300
+
+    Mood Journal: Creator page styling
+
+[33mcommit f2eabcd6bc82e85e5bc46cdaa519bab96dc52c4f[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 19 23:23:07 2024 +0300
+
+    Mood Journal: Header styling
+
+[33mcommit 0636f21e0f3878c87afb0baa5d7632a422e5031c[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 19 23:18:02 2024 +0300
+
+    Mood Journal: Header styling
+
+[33mcommit 6069495af337d3391a7486fbcaae8a5f41da0841[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 19 23:13:16 2024 +0300
+
+    Mood Journal: Header styling
+
+[33mcommit 3a2c3b852bcee941c4f945a1ea06a2b8305fb90d[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 19 23:08:40 2024 +0300
+
+    Mood Journal: Header styling
+
+[33mcommit 52403487bc1547f22a03af084b3b6be5536c5355[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 19 22:59:02 2024 +0300
+
+    Mood Journal: Header styling
+
+[33mcommit df11067c1eddeac7c7595d898dfcf18e8296ffd9[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 19 15:05:03 2024 +0300
+
+    Mood Journal: Updated Question.tsx
+
+[33mcommit 676d3593b03910e3d2c85a7dde620454f174474a[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 19 14:44:57 2024 +0300
+
+    Mood Journal
+
+[33mcommit 3bb6d9c5fddac6972ed58addba011505f560c871[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 19 14:42:00 2024 +0300
+
+    Mood Journal
+
+[33mcommit f5d9f783e5765fdb734f9b2e0f917632adaa06fe[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 19 14:40:04 2024 +0300
+
+    Mood Journal
+
+[33mcommit 01532ad21833031eb39d34f2e6de9adf3ee7b982[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 19 14:31:22 2024 +0300
+
+    Mood Journal
+
+[33mcommit b873fdca8dfd035770f058d6d1ec30d511ceeddb[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 19 14:09:50 2024 +0300
+
+    Mood Journal
+
+[33mcommit 8f7ed971129d0f267d1942350186dd997eee4f3d[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 19 13:10:07 2024 +0300
+
+    Mood Journal: Ignore build errors
+
+[33mcommit 50d9e5a6e91b07849714c409cad18954bc9cd0ac[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 19 13:04:44 2024 +0300
+
+    Mood Journal: Updated README.md
+
+[33mcommit 94a1c51456973f7849af1846968972b154081152[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 19 12:57:07 2024 +0300
+
+    Mood Journal: Updated 'get started' button
+
+[33mcommit 7245a2fcb6c637403fe74bc19e581c15ce953a78[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 19 12:43:12 2024 +0300
+
+    Mood Journal: Entrycard Changes
+
+[33mcommit a365f11b8e1c943a16bfee89733d462ab31dbd32[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 19 12:23:31 2024 +0300
+
+    Mood Journal: Creator component
+
+[33mcommit 282efc4a32355dd893e656094998329ad59f6b7e[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 19 11:59:16 2024 +0300
+
+    Mood Journal: Creator Image
+
+[33mcommit c49be3a42f6ade1192eeebf5c4dfccdd65c5d7d9[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 19 11:44:52 2024 +0300
+
+    Mood Journal: finilising the styling
+
+[33mcommit 8f19807580b38fd2aeb26ab8d41663e0a799769d[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 19 11:10:18 2024 +0300
+
+    Mood Journal: Dashboard Icons
+
+[33mcommit 7f0695b42b51036609c596d509f8da540299be69[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 19 10:49:56 2024 +0300
+
+    Mood Journal: Mocking Fuctions & Testing Homepage
+
+[33mcommit 485e6d0e61daabcf4cbbb9c6ed3f57c4694c5c40[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 18 23:31:12 2024 +0300
+
+    Mood Journal: Styling
+
+[33mcommit db407e1bb1a36e5e7c94064fdb723dc3f688afd4[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 18 23:20:35 2024 +0300
+
+    Mood Journal: Vitest Setup
+
+[33mcommit d154bade99b463ac6e18b66d8b85ff0c83acd589[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 18 23:20:14 2024 +0300
+
+    Mood Journal: Vitest Setup
+
+[33mcommit ff0c5d4591e9c8ac1195310a7af6d2b95f010abf[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 18 22:27:13 2024 +0300
+
+    Mood Journal: Charting Sentiment Values
+
+[33mcommit bb1e1226d6ae6ea15cf6b44a6f04992b7728f43b[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 18 21:00:38 2024 +0300
+
+    Mood Journal: Installed recharts
+
+[33mcommit 8006be38e127574cc60b4a4e77fd1ef01238dbe1[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 18 20:59:09 2024 +0300
+
+    Mood Journal: Charting Sentiment Values
+
+[33mcommit 54f7732e32899a420fb73728026eb38e3561a48b[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 18 20:51:51 2024 +0300
+
+    Mood Journal: Adding Sentiments to Database
+
+[33mcommit 6f1cb47508e85311983708faca940975a0e0c898[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 18 19:36:16 2024 +0300
+
+    Mood Journal: Computing a Sentiment Score
+
+[33mcommit cf54bcea2f15af52f122de013082698a14f27a1b[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 18 19:19:21 2024 +0300
+
+    Mood Journal: Search API & Results
+
+[33mcommit 7555be248a8314b9c35913a7291de03eecf69870[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 18 19:01:52 2024 +0300
+
+    Mood Journal: Search API & Results
+
+[33mcommit 7445ab36f15ad0e06b3dad412fcc9ce646f461a8[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 18 18:50:08 2024 +0300
+
+    Mood Journal:  Similarity Searches with Vectors
+
+[33mcommit 1492c1fa8a631ec04f1b4c8ae8e674271ed9969e[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 18 15:45:06 2024 +0300
+
+    Mood Journal: Updated README.md file
+
+[33mcommit f0fc6acc20d759318b9068b8e6871544ac57d064[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 18 15:43:49 2024 +0300
+
+    Mood Journal: Updated README.md file
+
+[33mcommit 9557888ec8f7e5db7afb643fdc3fb26a85305146[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 18 15:24:38 2024 +0300
+
+    Mood Journal: Entry Search UI
+
+[33mcommit 5d0dd0dcad889e3de34ac16c488cacdee5b86153[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 18 15:23:46 2024 +0300
+
+    Mood Journal: Entry Search UI
+
+[33mcommit 90eddbd52443f2ca908c65ec5a1f9803a5c9c21d[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 18 15:14:42 2024 +0300
+
+    Mood Journal: Entry Search UI
+
+[33mcommit ec493ec1628816d3c2d2cbd2d391b66da607c720[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 18 00:50:07 2024 +0300
+
+    Mood Journal: Navigation
+
+[33mcommit dc51b37034c73fb1606bd659399707481e622436[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 18 00:48:49 2024 +0300
+
+    Mood Journal: Navigation
+
+[33mcommit 955974fa2a121f0686090f78da945d546e9e9d49[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 18 00:42:03 2024 +0300
+
+    Mood Journal: Added Logo to Navigation bar
+
+[33mcommit 6edc3cde5532b68f4af87652a23a6e2c401a429a[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 18 00:31:35 2024 +0300
+
+    Mood Journal: Revalidation & Client State Management
+
+[33mcommit b7062f345c1c16c3af56ee06e84ec09cbbe3865f[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 18 00:02:17 2024 +0300
+
+    Mood Journal: Adding Analysis Data to Entry
+
+[33mcommit 27e7c65332c76f9a6f23000655f281f3d6160610[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Thu Oct 17 23:42:17 2024 +0300
+
+    Mood Journal: Connecting the Sidebar UI
+
+[33mcommit 0b77fc01f821e09150bdfff24a1f84a97cc7b70f[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Thu Oct 17 23:24:12 2024 +0300
+
+    Mood Journal: Saving Analysis to Database
+
+[33mcommit 8805f395b84c876541c0369ed373fa8e3ecb2970[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Thu Oct 17 19:36:59 2024 +0300
+
+    Mood Journal: Testing the Prompt Template
+
+[33mcommit 7d3d756d146c5b350bde5a3bdc8af71454e90d61[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Thu Oct 17 17:22:49 2024 +0300
+
+    Mood Journal: Prompt Template
+
+[33mcommit 113fddcaf9922930ee61d25f41feb4431201c2b0[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Thu Oct 17 15:49:33 2024 +0300
+
+    Mood Journal: Home page logo update
+
+[33mcommit f1559666bec8b90890e3c9fe554bf1079b75a75f[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Thu Oct 17 14:56:34 2024 +0300
+
+    Mood Journal: Prompt Template
+
+[33mcommit c25aa3879798426845b46932eebeabeddcdece07[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Thu Oct 17 14:25:10 2024 +0300
+
+    Mood Journal: Structured Output with Zod
+    :
+
+[33mcommit f50d32096d743b128443c45093e5b4e3e0e5f31a[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Thu Oct 17 13:14:37 2024 +0300
+
+    Mood Journal: Installing zod
+
+[33mcommit 78dae5fcc924a04126932fcecd37acd3113e7e24[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Thu Oct 17 13:12:31 2024 +0300
+
+    Mood Journal: Creating Consistent Propmts
+
+[33mcommit 217cd00581c70cfebfdca0b0d7fb6bd3ea3e82fe[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Tue Oct 15 06:34:00 2024 +0300
+
+    Mood Journal: Icons and Logos
+
+[33mcommit 18093bd4fe705411ed7f9c0adfc45b70ad8125e9[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Tue Oct 15 06:16:57 2024 +0300
+
+    Mood Journal: Icons and Logos
+
+[33mcommit e7ac591fef7c50f83b3196e146fcc2b59b6ff39e[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sun Oct 13 17:02:37 2024 +0300
+
+    Mood Journal
+
+[33mcommit bb4cee87fa7c99868382c6f047bfb124c60a404a[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 12 16:59:07 2024 +0300
+
+    Mood Journal: langchain installation
+
+[33mcommit 6a4e474ba89fcec74455eb0947c1d01332dadb7c[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 12 13:20:29 2024 +0300
+
+    Mood Journal: OpenAI Setup
+
+[33mcommit fe6af3d2249df8f6623c8cd38b192dd2be155930[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 12 13:06:34 2024 +0300
+
+    Mood Journal: OpenAI Setup
+
+[33mcommit 7720868f1649d8dfcb961673d053726e56ac6b2d[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 12 12:28:04 2024 +0300
+
+    Mood Journal: Sidebar UI
+
+[33mcommit 584ffb415dbb9b2edc7b7208319cc07341e39105[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 12 10:12:27 2024 +0300
+
+    Mood Journal: Sidebar UI
+
+[33mcommit efd2856884ca8784d0b627bda4bb335347a7b8fd[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 12 09:24:15 2024 +0300
+
+    Mood Journal: Shiny Button using framer-motion
+
+[33mcommit 3f13660ec14774f9ef4a7a71e55e31010a535642[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 12 09:22:57 2024 +0300
+
+    Mood Journal: Shiny Button using framer-motion
+
+[33mcommit e34cab87b2214cc316c23d7a057b392bf71c25e9[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 12 09:13:28 2024 +0300
+
+    Mood Journal: Dashboard
+
+[33mcommit 3687063a1e7310e96f2bb5d2dc39ed5ec2c3fae4[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 12 09:05:52 2024 +0300
+
+    Mood Journal: Autosaving Entries
+
+[33mcommit 35732a305d2887f84470478b2c6f506b9680ac52[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 12 09:05:34 2024 +0300
+
+    Mood Journal: Autosaving Entries
+
+[33mcommit 746a998a6e33dbec4d7bc53dd4934694f7600255[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 12 09:05:06 2024 +0300
+
+    Mood Journal: Autosaving Entries
+
+[33mcommit 9e0e15a0e7bfa0807f275742786acdc320afc717[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 12 08:50:23 2024 +0300
+
+    Mood Journal: Autosaving Entries
+
+[33mcommit 0e4fdf15b2ef133dcbcd6ad507e91cb89a2796b3[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 12 08:08:48 2024 +0300
+
+    Mood Journal: Updated editor styling
+
+[33mcommit 51d06147fcab71176e8662322db90770f73a9f90[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 12 08:03:30 2024 +0300
+
+    Mood Journal: Updating Journal Entries
+
+[33mcommit 1de8d058ce09c3e8152ee03abbfb50d5c860b0a4[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 12 07:51:47 2024 +0300
+
+    Mood Journal: Journal Entry Editor
+
+[33mcommit b36af5d59180e3910a416419ea66dc0bbad0fbc6[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 12 07:46:09 2024 +0300
+
+    Mood Journal: Journal Entry Editor
+
+[33mcommit ca9acfe013d1234963c04068469900211c0a27c7[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 12 07:43:45 2024 +0300
+
+    Mood Journal: Displaying Entry Details
+
+[33mcommit f12c4bec8fdb2c6ad96b67c8a1aa492ddf188c1b[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 12 07:08:08 2024 +0300
+
+    Mood Journal: Tried Revalidation
+
+[33mcommit 996d3d17898b6f37683732b458c09bb4776c6805[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 12 07:04:01 2024 +0300
+
+    Mood Journal: Creating the Entry Page
+
+[33mcommit 9f32c0fbfa97c174dcad5662d2a9e754b77f9ad5[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 12 06:57:03 2024 +0300
+
+    Mood Journal: EntryCard Component UI
+
+[33mcommit bdb6b6998e2b574b3174b73607fa050b2f6734af[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 12 06:29:06 2024 +0300
+
+    Mood Journal: Creating a New Entry
+
+[33mcommit fd2cef6ce333378b4033bcbb1da01af4a325e3e6[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sat Oct 12 05:55:38 2024 +0300
+
+    Mood Journal: New Journal Entry UI
+
+[33mcommit 9d50c954d5511188da57512f5cf5464c3429a3c8[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 11 20:39:52 2024 +0300
+
+    Mood Journal: Selecting Journal Entries
+
+[33mcommit d942ef99c9ebe675163b1958201d657baa575364[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 11 20:05:41 2024 +0300
+
+    Mood Journal: Responsive Dashboard
+
+[33mcommit bfccf7a9f00e500ad9a1526713cbd08c2b5df83d[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 11 20:02:22 2024 +0300
+
+    Mood Journal: Responsive Dashboard
+
+[33mcommit fe2de4127a4b4aeaa6914cf5113cb9a72cdb96af[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 11 17:53:00 2024 +0300
+
+    Mood Journal: User Proje Widget
+
+[33mcommit 77aaeb57f765493e2b88b7b83e8490b8b39d8735[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 11 17:49:42 2024 +0300
+
+    Mood Journal: Creating the Journal Page
+
+[33mcommit 373874b8f37e4626a95a2d687ca176472430d410[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 11 17:44:03 2024 +0300
+
+    Mood Journal: Creating the Journal Page
+
+[33mcommit 6a8b91cff15ea8c05d537d4815931e3413870796[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 11 17:33:12 2024 +0300
+
+    Mood Journal: Creating a New User
+
+[33mcommit 309cb3c52ee49f239d627164d708dcfe98287ff1[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 11 14:42:58 2024 +0300
+
+    Mood Journal: Database Utility Methods
+
+[33mcommit f02339c4166ea0516f7aadaf72f468fe7d97ec61[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 11 14:13:27 2024 +0300
+
+    Mood Journal: Updated layout.tsx
+
+[33mcommit 0f115baee6777c9751ee01fda722e6a3930584f2[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 11 14:08:04 2024 +0300
+
+    Mood Journal: Analysis Schema
+
+[33mcommit 039b2fcf7a80f0259678975479dcc2434da3d33e[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 11 13:57:02 2024 +0300
+
+    Mood Journal: User & JournalEntry Schemas
+
+[33mcommit ca00311e9f81394740edd4fa5dab32ace1364a22[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Fri Oct 11 13:37:46 2024 +0300
+
+    Mood Journal: Created User Model and Migrated it to Neon DB
+
+[33mcommit ff4a5de52d765c4bf32412475f3b112577d803dc[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Mon Oct 7 10:46:30 2024 +0300
+
+    Mood Journal: Neon serverless driver with Prisma
+
+[33mcommit c3260290aad298df5cc1fa7464ce130e6934c8ca[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Mon Oct 7 10:45:38 2024 +0300
+
+    Mood Journal: Updated schema.prisma
+
+[33mcommit 684891cc50952dd2999d7b2eec7311c39167024b[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Mon Oct 7 10:41:42 2024 +0300
+
+    Mood Journal: Updated schema.prisma
+
+[33mcommit 56797c7ebe31705b692e2c62e072a4fefb468184[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Mon Oct 7 10:37:28 2024 +0300
+
+    Mood Journal: Initialized prisma
+
+[33mcommit 3310d6c8ef8644b84f68238c20d2cdc5810ca7de[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sun Oct 6 19:04:11 2024 +0300
+
+    Mood Journal: Updated the .env.local.example
+
+[33mcommit ba0e680ded0eff2c0eaedbe4d6d2cfaee34635c0[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Sun Oct 6 19:03:27 2024 +0300
+
+    Mood Journal: installed prisma and @prisma/client and pg
+
+[33mcommit 93c14dc81b2b324049185726e413a5473bf62d2f[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Thu Sep 26 13:13:28 2024 +0300
+
+    Mood Journal: installed prisma and @prisma/client
+
+[33mcommit e4916b654f6acaa232a598dc66f9745621de2ec4[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Mon Sep 23 16:35:51 2024 +0300
+
+    Mood Journal: Updated SignUpPage file
+
+[33mcommit 03ea9c10f72f68377898fd69f6f2606a01a2895d[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Mon Sep 23 16:27:40 2024 +0300
+
+    Mood Journal: Created and Updated new-user/page.tsx file
+
+[33mcommit 16f6f1d9b51f474e85fb78be92bdeea523e6f195[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Mon Sep 23 16:23:56 2024 +0300
+
+    Mood Journal: Updated .env.local file
+
+[33mcommit 7a7af666a48f7fa04f22d3267bfaea28c653947d[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Mon Sep 23 16:22:06 2024 +0300
+
+    Mood Journal: Created and updated middleware.ts
+
+[33mcommit 660642178f212f458b5e103cb1f42a6ba5e6fbed[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Mon Sep 23 16:05:07 2024 +0300
+
+    Mood Journal: Created and updated SignInPage and SignUpPage files
+
+[33mcommit 9dd4202c4b08ca73decdaf5ad5592e25ce267161[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Mon Sep 23 15:51:50 2024 +0300
+
+    Mood Journal: Updated layout.jsx
+
+[33mcommit aff5c30bebafcf4c1caf14ba3c11de398dac1de8[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Mon Sep 23 15:50:03 2024 +0300
+
+    Mood Journal: Installed @clerk/nextjs
+
+[33mcommit 456d1f5294fef7bda6105a68431fc02d5fb68922[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Mon Sep 23 15:47:28 2024 +0300
+
+    Mood Journal: Created and Updated the .env.local file
+
+[33mcommit 964bc20cea324c33b1f8b21402ef229d183e0207[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Mon Sep 23 15:04:19 2024 +0300
+
+    Mood Journal: Updated app/page.tsx file
+
+[33mcommit a82e65a92a612bf5d378926e2c2b4e4d221d08c4[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Mon Sep 23 14:45:19 2024 +0300
+
+    Mood Journal: Cleared globals.css and page.tsx files
+
+[33mcommit 89bac4278bd278d12e986f11731e621a352506c2[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Mon Sep 23 14:41:49 2024 +0300
+
+    Mood Journal: Created and Updated .prettierrc file
+
+[33mcommit 7b23367deb0356bc026c7293e69ef12a52ccae73[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Mon Sep 23 14:39:06 2024 +0300
+
+    Mood Journal: Updated the README.md file
+
+[33mcommit 77b9c80d22d86e5efd6cfc48f5aa43ba30689f84[m
+Author: oluoko <brianotieno586@gmail.com>
+Date:   Mon Sep 23 14:28:46 2024 +0300
+
+    Initial commit from Create Next App
