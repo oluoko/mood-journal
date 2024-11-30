@@ -19,6 +19,8 @@ const createNewUser = async () => {
       data: {
         clerkUserId: user.id,
         email: user?.emailAddresses[0].emailAddress,
+        name: user.fullName,
+        imageUrl: user.imageUrl,
       },
     })
   }
