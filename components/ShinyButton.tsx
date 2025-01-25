@@ -4,7 +4,7 @@ import './ShinyButton.css'
 const ShinyButton = ({ text }) => {
   return (
     <motion.button
-      className="px-4 py-3 my-1 rounded-lg relative radial-gradient w-[150px] md:w-[250px] h-[50px] md:h-auto flex flex-col items-center justify-center"
+      className="my-1 rounded-lg relative radial-gradient w-[150px] md:w-[250px] h-[50px] md:h-auto flex flex-col items-center justify-center"
       initial={{ '--x': '100%', scale: 1 }}
       animate={{ '--x': '-100%' }}
       whileTap={{ scale: 0.97 }}
