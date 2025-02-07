@@ -22,6 +22,7 @@ model User {
   createdAt   DateTime       @default(now())
   updatedAt   DateTime       @updatedAt
   entries     JournalEntry[]
+  prompts     Prompt[]
   analyses    Analysis[]
 }
 
@@ -34,9 +35,30 @@ model JournalEntry {
   userId String
   user   User   @relation(fields: [userId], references: [id])
 
-  content String @db.Text
+  // Content is an array of prompt-response pairs
+  content Json
 
   analysis Analysis?
+
+  // Relation to prompts (many-to-many)
+  prompts Prompt[] @relation("JournalEntryPrompts")
+
+  @@unique([userId, id])
+}
+
+model Prompt {
+  id String @id @default(uuid())
+
+  promptText String   @unique
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  // Each user defines their own prompts
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  // Relation to JournalEntry (many-to-many)
+  journalEntries JournalEntry[] @relation("JournalEntryPrompts")
 
   @@unique([userId, id])
 }
