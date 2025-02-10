@@ -4,9 +4,11 @@ import Link from 'next/link'
 import DeleteConfirmation from './DeleteConfirmation'
 import { deleteEntry } from '@/utils/api'
 import { useState } from 'react'
+import Loader from './Loader'
 
 const EntryCard = ({ entry }) => {
   const [isDeleting, setIsDeleting] = useState(false)
+  const [loading, setIsloading] = useState(false)
   const date = new Date(entry.createdAt).toDateString()
 
   const truncate = (str, words) => {
@@ -15,7 +17,9 @@ const EntryCard = ({ entry }) => {
   }
 
   const handleDelete = async () => {
+    setIsloading(true)
     await deleteEntry(entry.id)
+    setIsloading(false)
     window.location.reload()
     setIsDeleting(false)
   }
@@ -33,6 +37,7 @@ const EntryCard = ({ entry }) => {
           onCancel={() => setIsDeleting(false)}
         />
       )}
+      {loading && <Loader text="Deleting the journal entry, please wait..." />}
       <div
         className={` overflow-hidden rounded-lg border border-slate-400/30 bg-slate-700/40 text-sm md:text-xl`}
       >
