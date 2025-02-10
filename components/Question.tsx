@@ -36,12 +36,12 @@ const Question = () => {
           value={value}
           type="text"
           placeholder="Ask the AI(gpt-3.5-turbo) a question about your entries..."
-          className="border border-black/20 px-4 py-3 rounded-lg text-sm md:text-xl w-3/4 text-black"
+          className="border border-black/20 px-2 py-1 rounded-xl text-sm md:text-xl w-3/4 text-black"
         />
         <button
           disabled={loading}
           type="submit"
-          className="bg-slate-700/40 border border-slate-400/30 px-4 py-3 rounded-lg text-sm md:text-xl w-1/4 h-full"
+          className="bg-slate-700/40 border border-slate-400/30 px-2 py-1 rounded-xl text-sm md:text-xl w-1/4 h-full"
         >
           Ask
         </button>

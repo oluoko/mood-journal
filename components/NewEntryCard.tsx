@@ -30,17 +30,17 @@ const NewEntryCard = () => {
   }
 
   return (
-    <div>
+    <div className="h-full">
       {loading && <Loader text="Creating your journal entry..." />}{' '}
       {/* Show loader */}
       <div
-        className={`cursor-pointer overflow-hidden rounded-lg border border-slate-400/30 ${
+        className={`cursor-pointer overflow-hidden rounded-lg border border-slate-400/30 h-full ${
           loading ? 'opacity-50 cursor-not-allowed' : ''
         }`}
         onClick={!loading ? handleOnClick : undefined}
       >
-        <div className="p-3 md:p-6">
-          <span className="text-lg md:text-2xl">New Entry</span>
+        <div className="p-3">
+          <span className="text-lg md:text-2xl font-extrabold">New Entry</span>
         </div>
       </div>
       {/* Error or Success Message */}
