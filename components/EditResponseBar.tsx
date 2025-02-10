@@ -1,6 +1,6 @@
 const EditResponseBar = ({ opacity, prompts }) => {
   return (
-    <div className="border border-slate-400/30 mx-2 md:mx-4 rounded-lg">
+    <div className="border border-slate-400/30 md:mx-4 rounded-lg">
       <div
         className="m-1 md:m-2 px-1 md:px-2 py-2 md:py-4 rounded-lg"
         style={{ backgroundColor: opacity }}

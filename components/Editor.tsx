@@ -155,12 +155,12 @@ const Editor = ({ entry }) => {
             \nWrite your entry here...`}
             value={value}
             onChange={(e) => setValue(e.target.value)}
-            className="bg-slate-700/40 w-full h-[calc(60vh-70px)] md:h-[calc(100vh-100px)] p-2 rounded-lg outline-none text-lg"
+            className="bg-slate-700/40 w-full h-screen md:h-[calc(100vh-100px)] p-2 rounded-lg outline-none text-lg"
           />
         </div>
 
         <div className="w-full md:w-2/5 flex flex-col gap-2 md:gap-4">
-          <div className="border border-slate-400/30 mx-2 md:mx-4 rounded-lg ">
+          <div className="border border-slate-400/30 md:mx-4 rounded-lg ">
             <div
               className="m-1 md:m-2 px-1 md:px-2 py-2 md:py-4 rounded-lg"
               style={{ backgroundColor: setOpacity(color, 0.1) }}
