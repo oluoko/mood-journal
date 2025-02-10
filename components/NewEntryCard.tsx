@@ -3,12 +3,13 @@
 import { createNewEntry } from '@/utils/api'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
+import { useToast } from '@/hooks/use-toast'
 import Loader from '@/components/Loader' // Import the Loader component
 
 const NewEntryCard = () => {
   const router = useRouter()
-  const [loading, setLoading] = useState(false) // Track loading state
-  const [message, setMessage] = useState('')
+  const { toast } = useToast()
+  const [loading, setLoading] = useState(false)
 
   const handleOnClick = async () => {
     try {
@@ -23,7 +24,10 @@ const NewEntryCard = () => {
       router.push(`/journal/${data.id}`) // Redirect after success
     } catch (error) {
       console.error('Error creating entry:', error)
-      setMessage('Failed to create entry. Please try again.')
+      toast({
+        title: 'Failed to create entry. Please try again.',
+        description: String(error),
+      })
     } finally {
       setLoading(false) // Stop loading after operation
     }
@@ -43,8 +47,6 @@ const NewEntryCard = () => {
           <span className="text-lg md:text-2xl font-extrabold">New Entry</span>
         </div>
       </div>
-      {/* Error or Success Message */}
-      {message && <div className="mt-2 text-sm text-slate-400">{message}</div>}
     </div>
   )
 }
