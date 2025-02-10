@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { useAutosave } from 'react-autosave'
 import DeleteConfirmation from './DeleteConfirmation'
 import { redirect, useRouter } from 'next/navigation'
+import EditResponseBar from './EditResponseBar'
 
 const Editor = ({ entry }) => {
   const [value, setValue] = useState(entry.content)
@@ -118,8 +119,8 @@ const Editor = ({ entry }) => {
           onCancel={() => setIsDeleting(false)}
         />
       )}
-      <div className="w-full h-full grid grid-cols-1 md:grid-cols-3 text-sm md:text-xl">
-        <div className="col-span-2">
+      <div className="w-full  grid md:flex pb-4 mb-4 md:justify-between text-sm md:text-xl">
+        <div className="w-full md:w-3/5">
           <div className="flex justify-between mb-2">
             <label htmlFor="entry-date" className="sr-only">
               Entry Date
@@ -158,30 +159,34 @@ const Editor = ({ entry }) => {
           />
         </div>
 
-        <div className="border border-slate-400/30 mx-2 md:mx-4 rounded-lg ">
-          <div
-            className="m-1 md:m-2 px-1 md:px-2 py-2 md:py-4 rounded-lg"
-            style={{ backgroundColor: setOpacity(color, 0.1) }}
-          >
-            <h2 className="text-[15px] md:text-xl">Analysis</h2>
+        <div className="w-full md:w-2/5 flex flex-col gap-2 md:gap-4">
+          <div className="border border-slate-400/30 mx-2 md:mx-4 rounded-lg ">
+            <div
+              className="m-1 md:m-2 px-1 md:px-2 py-2 md:py-4 rounded-lg"
+              style={{ backgroundColor: setOpacity(color, 0.1) }}
+            >
+              <h2 className="text-[15px] md:text-xl">Analysis</h2>
+            </div>
+            <div className="m-1 md:m-2 px-1 md:px-2 py-2 md:py-4 rounded-lg">
+              <ul>
+                {analysisData.map((item) => (
+                  <li
+                    key={item.name}
+                    className="flex items-center  justify-between py-2 border-t border-slate-400/30"
+                  >
+                    <span className="font-extrabold text-lg w-1/3">
+                      {item.name}
+                    </span>
+                    <span className="text-sm w-3/4 flex justify-end">
+                      {item.value}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <div className="m-1 md:m-2 px-1 md:px-2 py-2 md:py-4 rounded-lg">
-            <ul>
-              {analysisData.map((item) => (
-                <li
-                  key={item.name}
-                  className="flex items-center  justify-between py-2 border-t border-slate-400/30"
-                >
-                  <span className="font-extrabold text-lg w-1/3">
-                    {item.name}
-                  </span>
-                  <span className="text-sm w-3/4 flex justify-end">
-                    {item.value}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
+
+          <EditResponseBar prompts={prompts} opacity={setOpacity(color, 0.1)} />
         </div>
       </div>
     </>
