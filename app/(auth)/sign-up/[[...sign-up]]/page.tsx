@@ -115,16 +115,24 @@ export default function SignUpPage() {
     <AuthLayout mode="sign-in">
       <div className="flex flex-col items-center justify-center">
         <Card className="w-[90vw] md:w-full max-w-md my-4">
-          <CardHeader>
-            <CardTitle className="font-bold text-center text-2xl">
-              Welcome to{' '}
-              <span className="font-black text-3xl">
-                <span className="text-primary text-4xl">R</span>
-                eflectify
-              </span>
-              . Sign up to get started.
-            </CardTitle>
-          </CardHeader>
+          {!pendingVerification ? (
+            <CardHeader>
+              <CardTitle className="font-bold text-center text-2xl">
+                Welcome to{' '}
+                <span className="font-black text-3xl">
+                  <span className="text-primary text-4xl">R</span>
+                  eflectify
+                </span>
+                . Sign up to get started.
+              </CardTitle>
+            </CardHeader>
+          ) : (
+            <CardHeader>
+              <CardTitle className="font-bold text-center text-2xl">
+                Verify your email address
+              </CardTitle>
+            </CardHeader>
+          )}
           <CardContent>
             {!pendingVerification ? (
               <>
