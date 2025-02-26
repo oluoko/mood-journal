@@ -1,3 +1,4 @@
+import Loader from '@/components/Loader'
 import { prisma } from '@/utils/db'
 import { currentUser } from '@clerk/nextjs/server'
 import { redirect } from 'next/navigation'
@@ -30,7 +31,9 @@ const createNewUser = async () => {
 
 const NewUser = async () => {
   await createNewUser()
-  return <div className="text-3xl flex">...loading</div>
+  return (
+    <Loader text="Creating your account. Saving your information to our database" />
+  )
 }
 
 export default NewUser

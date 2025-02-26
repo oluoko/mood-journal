@@ -1,21 +1,15 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { UserButton } from '@clerk/nextjs'
-import {
-  HomeIcon,
-  BookOpenIcon,
-  ClockIcon,
-} from '@heroicons/react/24/outline'
-import {
-  EllipsisVertical,
-  List,
-} from "lucide-react";
+import { HomeIcon, BookOpenIcon, ClockIcon } from '@heroicons/react/24/outline'
+import { EllipsisVertical, List } from 'lucide-react'
 import { ReactNode } from 'react'
 import smallLogo from '/public/Rlogo w.svg'
 import largeLogo from '/public/Reflectify W Animinate Logo.svg'
 import Image from 'next/image'
 import Link from 'next/link'
 import CreatorImage from '@/components/CreatorImage'
+import CustomUserButton from '@/components/CustomUserButton'
 
 interface DashboardLayoutProps {
   children: ReactNode
@@ -88,9 +82,14 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
             className="h-full flex items-center justify-end cursor-pointer"
             onClick={toggleSidebar}
           >
- {isSidebarOpen ? <EllipsisVertical className="size-6 md:size-8" /> : <List className="size-6 md:size-8" />}
+            {isSidebarOpen ? (
+              <EllipsisVertical className="size-6 md:size-8" />
+            ) : (
+              <List className="size-6 md:size-8" />
+            )}
           </div>
           <div className="px-0 md:px-6 h-full flex items-center justify-end">
+            {/* <CustomUserButton /> */}
             <UserButton />
           </div>
         </header>

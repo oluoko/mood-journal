@@ -6,7 +6,7 @@ import ShinyButton from '@/components/ShinyButton'
 
 export default function Home() {
   const { userId } = useAuth()
-  const href = userId ? '/journal' : '/new-user'
+  const href = userId ? '/journal' : '/sign-up'
 
   return (
     <div className="w-screen h-screen bg-slate-950 text-slate-300 flex flex-col justify-center items-center gap-10 md:gap-15">
