@@ -22,6 +22,12 @@ import Loader from '@/components/Loader'
 import AuthLayout from '@/components/AuthLayout'
 import Separator from '@/components/CustomSeparator'
 import OauthSignIn from '@/components/OAuth'
+import {
+  InputOTP,
+  InputOTPGroup,
+  InputOTPSlot,
+} from '@/components/ui/input-otp'
+import { REGEXP_ONLY_DIGITS_AND_CHARS } from 'input-otp'
 
 export default function SignUpPage() {
   const { isLoaded, setActive, signUp } = useSignUp()
@@ -35,6 +41,7 @@ export default function SignUpPage() {
   const [authStage, setAuthStage] = useState<
     'initial' | 'redirecting' | 'registering' | 'verifying'
   >('initial')
+  const [codeLength, setCodeLength] = useState(6)
 
   const router = useRouter()
 
@@ -205,15 +212,19 @@ export default function SignUpPage() {
               <form onSubmit={handleVerify} className="space-y-4">
                 <div className="space-y-2">
                   <Label htmlFor="code">Verification Code</Label>
-                  <Input
-                    type="text"
-                    id="code"
+                  <InputOTP
+                    maxLength={codeLength}
+                    pattern={REGEXP_ONLY_DIGITS_AND_CHARS}
                     value={code}
-                    onChange={(e) => setCode(e.target.value)}
-                    placeholder="Enter the verification code sent to your email"
+                    onChange={(value) => setCode(value)}
                     disabled={isLoading}
-                    required
-                  />
+                  >
+                    <InputOTPGroup>
+                      {[...Array(codeLength)].map((_, i) => (
+                        <InputOTPSlot key={i} index={i} />
+                      ))}
+                    </InputOTPGroup>
+                  </InputOTP>
                 </div>
                 {errors && (
                   <Alert>
