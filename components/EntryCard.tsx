@@ -37,7 +37,7 @@ const EntryCard = ({ entry }) => {
           onCancel={() => setIsDeleting(false)}
         />
       )}
-      {loading && <Loader text="Deleting the journal entry, please wait..." />}
+      {loading && <Loader text="Deleting the journal entry, please wait" />}
       <div
         className={` overflow-hidden rounded-lg border border-slate-400/30 bg-slate-700/40 text-sm md:text-xl`}
       >
