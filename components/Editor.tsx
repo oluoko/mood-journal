@@ -186,7 +186,7 @@ const Editor = ({ entry }) => {
             </div>
           </div>
 
-          <EditResponseBar prompts={prompts} opacity={setOpacity(color, 0.1)} />
+          {/* <EditResponseBar prompts={prompts} opacity={setOpacity(color, 0.1)} /> */}
         </div>
       </div>
     </>

@@ -35,7 +35,7 @@ const NewEntryCard = () => {
 
   return (
     <div className="h-full">
-      {loading && <Loader text="Creating your journal entry..." />}{' '}
+      {loading && <Loader text="Creating your journal entry" />}{' '}
       {/* Show loader */}
       <div
         className={`cursor-pointer overflow-hidden rounded-lg border border-slate-400/30 h-full ${
