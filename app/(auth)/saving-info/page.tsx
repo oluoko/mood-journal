@@ -31,9 +31,7 @@ const createNewUser = async () => {
 
 const NewUser = async () => {
   await createNewUser()
-  return (
-    <Loader text="Creating your account. Saving your information to our database" />
-  )
+  return <Loader text="Creating your account." />
 }
 
 export default NewUser

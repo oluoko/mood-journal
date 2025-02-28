@@ -53,13 +53,11 @@ export default function SignUpPage() {
   }
 
   if (!isLoaded) {
-    return <Loader text="Preparing Sign Up. Setting up secure registration" />
+    return <Loader text="Preparing Sign Up" />
   }
 
   if (authStage === 'redirecting') {
-    return (
-      <Loader text="Registration Complete. Redirecting you to your dashboard" />
-    )
+    return <Loader text="Registration Complete" />
   }
 
   const handleSubmit = async (e: FormEvent) => {

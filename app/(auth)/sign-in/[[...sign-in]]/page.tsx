@@ -43,9 +43,7 @@ export default function SignInForm() {
   }
 
   if (!isLoaded) {
-    return (
-      <Loader text="Preparing the SignIn. Setting up secure authentication" />
-    )
+    return <Loader text="Preparing the SignIn" />
   }
 
   const handleSubmit = async (e: FormEvent) => {
@@ -80,9 +78,7 @@ export default function SignInForm() {
   }
 
   if (authStage === 'redirecting') {
-    return (
-      <Loader text="Sign In Successfull. Redirecting you to your dashboard" />
-    )
+    return <Loader text="Sign In Successful" />
   }
 
   return (
