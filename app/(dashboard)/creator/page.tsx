@@ -32,7 +32,7 @@ const Creator = () => {
           />
         </Link>
         <Link
-          href="https://linkedin.com/in/brian-otieno-64a902213"
+          href="https://linkedin.com/in/brianoluoko"
           target="_blank"
         >
           <img
@@ -42,7 +42,7 @@ const Creator = () => {
           />
         </Link>
 
-        <Link href="https://instagram.com/that_guy.brian" target="_blank">
+        <Link href="https://instagram.com/oluoko_" target="_blank">
           <img
             src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg"
             alt="Instagram"
@@ -58,7 +58,7 @@ const Creator = () => {
           />
         </Link>
         <Link
-          href="https://www.youtube.com/channel/UC1n8QvoeaVxwkxLQhQBnElw"
+          href="https://www.youtube.com/@brainwrestle"
           target="_blank"
         >
           <img
@@ -68,7 +68,7 @@ const Creator = () => {
           />
         </Link>
         <Link
-          href="https://www.facebook.com/profile.php?id=100070284942061"
+          href="https://www.facebook.com/oluokobrian"
           target="_blank"
         >
           <img
